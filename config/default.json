@@ -1,0 +1,5 @@
+{
+    "dbUri":"mongodb://127.0.0.1:27017",
+    "defaultDb":"myapp",
+    "features":["/Users/takiacademy/test/core-features","/Users/takiacademy/test/features"]
+}
