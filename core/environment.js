@@ -50,9 +50,8 @@ class Environment{
                 logger.error(`cannot load manifest for feature ${json.name}`)
                 process.exit(1);
             }
-            models.Feature.findOne({name:json.name}).update(data).then(() => {
-                logger.info(`loaded manifest for ${data.name}`)
-                json = data
+            models.Feature.findOne({name:json.name}).update(json).then(() => {
+                logger.info(`loaded manifest for ${json.name}`)
             })
         }).finally(() => {
             if(json.installed)
