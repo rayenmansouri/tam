@@ -1,1 +1,1 @@
-a simple dynamic user roles and permission management
+A simple (yet dynamic) authorization and user management system
