@@ -2,6 +2,7 @@ const mongoose = require("mongoose")
 
 const schema = new mongoose.Schema({
     modelId:{type:mongoose.Schema.Types.ObjectId, ref: 'Model',required:true},
+    role:{type:mongoose.Schema.Types.ObjectId, ref: 'Role',required:true},
     readPermission:{
         type:'Boolean',
         default:false

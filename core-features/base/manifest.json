@@ -1,5 +1,10 @@
 {
     "name":"core",
     "description":"taki task management core features",
-    "installed":true
+    "installed":true,
+    "data":[
+        "data/role.js",
+        "data/access.js",
+        "data/user.js"
+    ]
 }

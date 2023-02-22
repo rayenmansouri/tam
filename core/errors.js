@@ -1,9 +1,10 @@
 const logger = require('./logger')
+
 class AccessDenied extends Error{
     constructor(message){
         super(message)
         this.code = 401
-        this.message = message || "access denied"
+        this.message = message || "Access denied"
     }
 }
 
@@ -11,13 +12,20 @@ class NotFoundError extends Error{
     constructor(message){
         super(message)
         this.code = 404
-        this.message = message || "not found Error"
+        this.message = message || "Not found Error"
     }
 }
 
+class ConflictError extends Error{
+    constructor(message){
+        super(message)
+        this.code = 409
+        this.message = message || "Already exists"
+    }
+}
 
 function handleError(err,req,res,next){
-    if(err.code == 11000)
+    if(err.code == 409)
         return res.status(400).json({
             "message":err.message
         })
@@ -31,4 +39,4 @@ function handleError(err,req,res,next){
     })
 }
 
-module.exports = { AccessDenied,handleError,NotFoundError }
+module.exports = { AccessDenied,handleError,NotFoundError,ConflictError }
