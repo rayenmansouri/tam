@@ -1,0 +1,14 @@
+{
+    "model":"User",
+    "id":"admin-user",
+    "body":{
+        "name":"rayen mansouri",
+        "role":{
+            "type":"ref",
+            "id":"adminRole"
+        },
+        "email":"mansourirayen@takiacademyteam.com",
+        "password":"123"
+    }
+}
+

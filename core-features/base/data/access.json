@@ -1,0 +1,19 @@
+ {
+        "model":"Access",
+        "id":"accessModelAccess",
+        "body":{
+            "role":{
+               "type":"ref",
+               "id":"adminRole"
+            },
+            "modelId":{
+               "type":"ref",
+               "id":"Access"
+            },
+            "writePermission":true,
+            "readPermission":true,
+            "updatePermission":true,
+            "deletePermission":true
+        }
+}
+

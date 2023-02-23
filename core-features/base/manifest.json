@@ -3,8 +3,8 @@
     "description":"taki task management core features",
     "installed":true,
     "data":[
-        "data/role.js",
-        "data/access.js",
-        "data/user.js"
+        "data/role.json",
+        "data/access.json",
+        "data/user.json"
     ]
 }

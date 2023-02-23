@@ -1,0 +1,8 @@
+{
+        "model":"Role",
+        "id":"adminRole",
+        "body":{
+                "name":"admin"
+        }
+}
+
